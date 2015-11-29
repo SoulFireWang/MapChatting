@@ -51,7 +51,7 @@ BMKMapManager* _mapManager;
     [self customTabbar];
     
     //测试
-//    [self test];
+    [self test];
     
     return YES;
 }
