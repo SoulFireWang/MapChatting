@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SFAnimatePickerView" id="iN0-l3-epB" customClass="SFAnimatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVr-6e-uJe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Kpq-pe-qty"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="取消" id="wBa-Jl-UOh">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancel:" destination="iN0-l3-epB" id="ykl-2P-OSZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="qNI-ih-ePe"/>
+                        <barButtonItem title="确定" id="oSI-01-cJq">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="save:" destination="iN0-l3-epB" id="Jav-Rt-gMO"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </toolbar>
+                <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-k0-Qmx">
+                    <rect key="frame" x="0.0" y="21" width="320" height="162"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TiA-k0-Qmx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Ks-1c-WKV"/>
+                <constraint firstItem="TiA-k0-Qmx" firstAttribute="top" secondItem="oVr-6e-uJe" secondAttribute="bottom" id="V5e-OX-qfV"/>
+                <constraint firstItem="oVr-6e-uJe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZLS-CD-s2h"/>
+                <constraint firstItem="oVr-6e-uJe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lW6-Oy-hDM"/>
+                <constraint firstAttribute="trailing" secondItem="TiA-k0-Qmx" secondAttribute="trailing" id="sjB-6L-RHi"/>
+                <constraint firstAttribute="trailing" secondItem="oVr-6e-uJe" secondAttribute="trailing" id="te8-Ob-YAV"/>
+                <constraint firstAttribute="bottom" secondItem="TiA-k0-Qmx" secondAttribute="bottom" id="z2I-h3-clB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBarButtonItem" destination="wBa-Jl-UOh" id="1GO-a8-kpH"/>
+                <outlet property="pickerView" destination="TiA-k0-Qmx" id="1HT-gc-Lgw"/>
+                <outlet property="saveBarButtonItem" destination="oSI-01-cJq" id="OPk-pZ-PBh"/>
+                <outlet property="toolbar" destination="oVr-6e-uJe" id="EpU-Ir-SA6"/>
+            </connections>
+            <point key="canvasLocation" x="163" y="314"/>
+        </view>
+    </objects>
+</document>

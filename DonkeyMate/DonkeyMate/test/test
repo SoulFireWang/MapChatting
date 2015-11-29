@@ -1,0 +1,227 @@
+/
+//  MapVC.m
+//
+//
+//  Created by klbest1 on 13-7-12.
+//  Copyright (c) 2013年 My. All rights reserved.
+//
+
+
+#import "MapVC.h"
+#import "AnnitationView.h"
+#import "UIView+Animation.h"
+#import "MyAppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
+
+
+
+
+@interface MapVC ()
+{
+
+AnnitationView *lView;
+}
+@end
+
+
+@implementation MapVC
+@synthesize annitations;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+if (self) {
+// Custom initialization
+}
+return self;
+}
+
+-(void)loadView{
+
+
+if (IS_IPHONE5) {
+
+}
+else
+{
+self.view = [[[NSBundle mainBundle] loadNibNamed:@"MapVC" owner:self options:nil] objectAtIndex:0];
+}
+}
+
+- (void)viewDidLoad
+{
+[super viewDidLoad];
+// Do any additional setup after loading the view from its nib.
+[self.mapView showsUserLocation];
+[self.mapView setCenterCoordinate:[MyAppDelegate shareAppDelegate].getLocation.coordinate];
+[self.mapView setZoomLevel:14];
+lView = [[AnnitationView alloc] initWithFrame:CGRectMake(0,0, 256, 105)];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+
+//    [_mapView viewWillAppear];
+self.mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getAnnitations:) name:@"getAnnitations" object:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+//    [_mapView viewWillDisappear];
+self.mapView.delegate = nil; // 不用时，置nil
+[[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)changeBubblePosition {
+if (selectedAV) {
+CGRect rect = selectedAV.frame;
+CGPoint center;
+center.x = rect.origin.x + rect.size.width/2 +40;
+center.y = rect.origin.y - lView.frame.size.height/2 ;
+lView.center = center;
+}
+}
+
+-(void)getAnnitations:(NSNotification *)pNoti
+{
+if ([pNoti.name isEqualToString: @"getAnnitations"]) {
+
+annitations = pNoti.object;
+[self addAnnitations];
+}
+
+}
+
+-(void)addAnnitations
+{
+for (int i = 0; i < self.annitations.count; i++) {
+
+NSLog(@"latitude:%@ , longitude:%@, Name:%@,",[[self.annitations objectAtIndex:i] objectForKey:@"latitude"],[[self.annitations objectAtIndex:i] objectForKey:@"longitude"],[[self.annitations objectAtIndex:i] objectForKey:@"name"]);
+BMKPointAnnotation *item = [[BMKPointAnnotation alloc] init];
+CLLocationCoordinate2D location = CLLocationCoordinate2DMake([[[self.annitations objectAtIndex:i] objectForKey:@"latitude"] doubleValue], [[[self.annitations objectAtIndex:i] objectForKey:@"longitude"] doubleValue]);
+item.coordinate = location;
+item.title = [[self.annitations objectAtIndex:i] objectForKey:@"name"];
+
+[self.mapView addAnnotation:item];
+}
+}
+
+-(void)removeAnniTations:(BMKPointAnnotation *)pAnnota
+{
+NSArray *viewAnnotas =  self.mapView.annotations;
+
+for (id lAnnotation in viewAnnotas) {
+
+if ([lAnnotation isKindOfClass:[BMKPointAnnotation class]]) {
+
+if ( pAnnota != lAnnotation) {
+
+[self.mapView deselectAnnotation:lAnnotation animated:YES];
+}
+}
+}
+}
+
+- (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id <BMKAnnotation>)annotation
+{
+NSString *AnnotationViewID = @"KJMark";
+
+// 检查是否有重用的缓存
+BMKAnnotationView* bmkAnnotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
+
+// 缓存没有命中，自己构造一个，一般首次添加annotation代码会运行到此处
+if (bmkAnnotationView == nil) {
+bmkAnnotationView = [[[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID] autorelease];
+((BMKPinAnnotationView*)bmkAnnotationView).pinColor = BMKPinAnnotationColorRed;
+// 设置重天上掉下的效果(annotation)
+((BMKPinAnnotationView*)bmkAnnotationView).animatesDrop = YES;
+}
+
+// 设置位置
+bmkAnnotationView.centerOffset = CGPointMake(-50, -(bmkAnnotationView.frame.size.height * 0.5));
+bmkAnnotationView.annotation = annotation;
+// 单击弹出泡泡，弹出泡泡前提annotation必须实现title属性
+bmkAnnotationView.canShowCallout = NO;
+
+
+return bmkAnnotationView;
+}
+
+- (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view
+{
+
+
+selectedAV = view;
+
+[self removeAnniTations:view.annotation];
+if (lView.superview != nil) {
+
+[lView removeFromSuperview];
+}
+
+if (lView.superview == nil) {
+[view.superview addSubview:lView];
+lView.hidden = YES;
+lView.layer.zPosition = 1;
+}
+
+CGPoint movedPoint1 = [self.mapView convertCoordinate:view.annotation.coordinate toPointToView:self.mapView];
+NSLog(@"2x:%f , 2x:%f",movedPoint1.x,movedPoint1.y);
+
+if (fabs(movedPoint1.x - movedPoint.x) <=4 && fabs(movedPoint1.y- movedPoint.y) <=4) {
+
+[lView showBubble:YES];
+[self changeBubblePosition];
+}else
+{
+[mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
+}
+}
+
+- (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view
+{
+if (lView.superview != nil) {
+
+[lView removeFromSuperview];
+}
+
+}
+
+#pragma mark 区域改变
+- (void)mapView:(BMKMapView *)mapView regionWillChangeAnimated:(BOOL)animated
+{
+if (selectedAV) {
+#ifdef Debug
+CGPoint point = [mapView convertCoordinate:selectedAV.annotation.coordinate toPointToView:selectedAV.superview];
+//CGRect rect = selectedAV.frame;
+DLog(@"x=%.1f, y= %.1f", point.x, point.y);
+#endif
+
+}
+}
+- (void)mapView:(BMKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+{
+if (selectedAV) {
+
+[lView showBubble:YES];
+[self changeBubblePosition];
+movedPoint = [self.mapView convertCoordinate:mapView.centerCoordinate toPointToView:self.mapView];
+NSLog(@"1x:%f , 1x:%f",movedPoint.x,movedPoint.y);
+}
+}
+
+- (void)didReceiveMemoryWarning
+{
+[super didReceiveMemoryWarning];
+// Dispose of any resources that can be recreated.
+}
+
+-(void)dealloc
+{
+[lView release],lView = nil;
+if (_mapView) {
+[_mapView release];
+_mapView = nil;
+}
+[super dealloc];
+}
+@end
