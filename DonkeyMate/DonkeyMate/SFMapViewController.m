@@ -8,7 +8,7 @@
 
 #import "SFMapViewController.h"
 #import <CoreLocation/CoreLocation.h>
-#import "SFCommunicationViewController.h"
+
 #import "SFCommucationTool.h"
 #import "SFPersonEnity.h"
 #import "SFMessageEntity.h"

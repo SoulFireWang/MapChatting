@@ -20,8 +20,6 @@
 		854262561BECAD3F00A59D80 /* FancyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 854262501BECAD3F00A59D80 /* FancyTabBar.m */; };
 		854262571BECAD3F00A59D80 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 854262521BECAD3F00A59D80 /* UIImage+ImageEffects.m */; };
 		854262581BECAD3F00A59D80 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 854262541BECAD3F00A59D80 /* UIView+Screenshot.m */; };
-		8542625C1BECAD7500A59D80 /* SFViewController_FancyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542625A1BECAD7500A59D80 /* SFViewController_FancyButton.m */; };
-		8542625D1BECAD7500A59D80 /* SFViewController_FancyButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542625B1BECAD7500A59D80 /* SFViewController_FancyButton.xib */; };
 		855621A71BEDAEBB0035EE41 /* SFFriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 855621A61BEDAEBB0035EE41 /* SFFriendsView.m */; };
 		855621A91BEDAECA0035EE41 /* SFFriendsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855621A81BEDAEC90035EE41 /* SFFriendsView.xib */; };
 		855621AC1BEDBFEF0035EE41 /* SFCommunicationdialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 855621AB1BEDBFEF0035EE41 /* SFCommunicationdialog.m */; };
@@ -78,8 +76,6 @@
 		8556257E1BEDEB460035EE41 /* UUMessageContentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 855625481BEDEB460035EE41 /* UUMessageContentButton.m */; };
 		8556257F1BEDEB460035EE41 /* UUMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8556254A1BEDEB460035EE41 /* UUMessageFrame.m */; };
 		855625801BEDEB460035EE41 /* UUProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8556254C1BEDEB460035EE41 /* UUProgressHUD.m */; };
-		855625841BEDEB650035EE41 /* SFtestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855625821BEDEB650035EE41 /* SFtestViewController.m */; };
-		855625851BEDEB650035EE41 /* SFtestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855625831BEDEB650035EE41 /* SFtestViewController.xib */; };
 		856815A01BE5C8D2005FCC50 /* SFMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8568159F1BE5C8D2005FCC50 /* SFMeTableViewController.m */; };
 		856815A31BE5C8DE005FCC50 /* SFFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856815A21BE5C8DE005FCC50 /* SFFriendsTableViewController.m */; };
 		856815AC1BE5E0A4005FCC50 /* SFShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856815AB1BE5E0A4005FCC50 /* SFShareViewController.m */; };
@@ -92,27 +88,14 @@
 		85689E041BF872B300DE87FD /* SFImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85689E031BF872B300DE87FD /* SFImageViewController.m */; };
 		85689E081BF87DCD00DE87FD /* LTInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85689E071BF87DCD00DE87FD /* LTInfiniteScrollView.m */; };
 		856F32A71BEB70BE00E1EF73 /* SFMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32A61BEB70BE00E1EF73 /* SFMapManager.m */; };
-		856F32AB1BEC6E9100E1EF73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32AA1BEC6E9100E1EF73 /* ViewController.m */; };
-		856F32B61BEC6E9A00E1EF73 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32AD1BEC6E9A00E1EF73 /* FirstViewController.m */; };
-		856F32B71BEC6E9A00E1EF73 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32AF1BEC6E9A00E1EF73 /* SecondViewController.m */; };
-		856F32B81BEC6E9A00E1EF73 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32B11BEC6E9A00E1EF73 /* ThirdViewController.m */; };
-		856F32B91BEC6E9A00E1EF73 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32B31BEC6E9A00E1EF73 /* FourViewController.m */; };
-		856F32BA1BEC6E9A00E1EF73 /* MiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32B51BEC6E9A00E1EF73 /* MiddleViewController.m */; };
 		856F32BD1BEC74CE00E1EF73 /* SFMainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F32BC1BEC74CE00E1EF73 /* SFMainTabbarController.m */; };
 		856FF7431BF2FABC004AC460 /* SFDataMetalTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 856FF7421BF2FABC004AC460 /* SFDataMetalTool.m */; };
-		856FF7481BF30484004AC460 /* SFTableViewController_JsonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 856FF7461BF30484004AC460 /* SFTableViewController_JsonTest.m */; };
-		856FF7491BF30484004AC460 /* SFTableViewController_JsonTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856FF7471BF30484004AC460 /* SFTableViewController_JsonTest.xib */; };
 		857189901BE72C070062FB94 /* SFPersonalSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571898F1BE72C070062FB94 /* SFPersonalSignViewController.m */; };
-		857189D91BE789050062FB94 /* SFViewController_TestPopActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 857189D71BE789050062FB94 /* SFViewController_TestPopActionSheet.m */; };
-		857189DA1BE789050062FB94 /* SFViewController_TestPopActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857189D81BE789050062FB94 /* SFViewController_TestPopActionSheet.xib */; };
 		8571AC411BEA173B004A01FF /* SFApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571AC401BEA173B004A01FF /* SFApplication.m */; };
 		857B70341BE87A0B004A85D8 /* SFAnimatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 857B70331BE87A0B004A85D8 /* SFAnimatePickerView.m */; };
 		857B70381BE87A38004A85D8 /* SFAnimatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857B70371BE87A38004A85D8 /* SFAnimatePickerView.xib */; };
 		857E6F701BF6F535002590F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857E6F6E1BF6F535002590F3 /* Main.storyboard */; };
 		857E6F741BF72CEF002590F3 /* SFPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E6F731BF72CEF002590F3 /* SFPersonTableViewCell.m */; };
-		857E6F771BF73408002590F3 /* SFHeadViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E6F761BF73408002590F3 /* SFHeadViewTableViewController.m */; };
-		857E6F7B1BF736A6002590F3 /* SFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E6F7A1BF736A6002590F3 /* SFView.m */; };
-		857E6F7D1BF736B5002590F3 /* SFView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857E6F7C1BF736B5002590F3 /* SFView.xib */; };
 		8592F32D1BE0B12D007B702C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592F32C1BE0B12D007B702C /* main.m */; };
 		8592F3301BE0B12D007B702C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8592F32F1BE0B12D007B702C /* AppDelegate.mm */; };
 		8592F3331BE0B12D007B702C /* SFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8592F3321BE0B12D007B702C /* SFMapViewController.m */; };
@@ -139,20 +122,15 @@
 		8592F3791BE0E0C2007B702C /* SFMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8592F3781BE0E0C2007B702C /* SFMapViewController.xib */; };
 		85A27E331BF0623C00DD31A5 /* SFInputText.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A27E321BF0623C00DD31A5 /* SFInputText.m */; };
 		85A27E361BF06CD200DD31A5 /* SFPersonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A27E351BF06CD200DD31A5 /* SFPersonHeadView.m */; };
-		85AD75751BEA2A89001A1403 /* LocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AD75731BEA2A89001A1403 /* LocationDemoViewController.m */; };
-		85AD75761BEA2A89001A1403 /* LocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85AD75741BEA2A89001A1403 /* LocationDemoViewController.xib */; };
 		85AF49311BE8C85C00D838F0 /* SFFriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AF492F1BE8C85C00D838F0 /* SFFriendsTableViewCell.m */; };
 		85AF49321BE8C85C00D838F0 /* SFFriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85AF49301BE8C85C00D838F0 /* SFFriendsTableViewCell.xib */; };
 		85AF49361BE8CD8600D838F0 /* SFFriendEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AF49351BE8CD8600D838F0 /* SFFriendEntity.m */; };
 		85B41AEF1BE1ED6900B91400 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B41AEE1BE1ED6900B91400 /* GCDAsyncSocket.m */; };
-		85B41AF81BE1EE5C00B91400 /* SFCommunicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B41AF61BE1EE5C00B91400 /* SFCommunicationViewController.m */; };
-		85B41AF91BE1EE5C00B91400 /* SFCommunicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85B41AF71BE1EE5C00B91400 /* SFCommunicationViewController.xib */; };
 		85B41AFC1BE2078800B91400 /* SFBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B41AFB1BE2078800B91400 /* SFBaseEntity.m */; };
 		85B41AFF1BE2079A00B91400 /* SFPersonEnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B41AFE1BE2079A00B91400 /* SFPersonEnity.m */; };
 		85B41B021BE2269900B91400 /* SFCommucationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B41B011BE2269900B91400 /* SFCommucationTool.m */; };
 		85B41B051BE22F1600B91400 /* SFMessageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B41B041BE22F1600B91400 /* SFMessageEntity.m */; };
 		85D1A5681BF365D00063BC6E /* SFHeartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D1A5671BF365D00063BC6E /* SFHeartManager.m */; };
-		85EEEB981BE3366E00D63A00 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 85EEEB971BE3366E00D63A00 /* test */; };
 		85EEEBD61BE3814100D63A00 /* SFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEBD51BE3814100D63A00 /* SFConstants.m */; };
 		85EEEBFC1BE470AB00D63A00 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEBDC1BE470AB00D63A00 /* MKAnnotationView+WebCache.m */; };
 		85EEEBFD1BE470AB00D63A00 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEBDE1BE470AB00D63A00 /* NSData+ImageContentType.m */; };
@@ -171,8 +149,6 @@
 		85EEEC0A1BE470AB00D63A00 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEBF91BE470AB00D63A00 /* UIImageView+WebCache.m */; };
 		85EEEC0B1BE470AB00D63A00 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEBFB1BE470AB00D63A00 /* UIView+WebCacheOperation.m */; };
 		85EEEC121BE475C500D63A00 /* SFAnnotationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEC111BE475C500D63A00 /* SFAnnotationEntity.m */; };
-		85EEEC161BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEEC141BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.m */; };
-		85EEEC171BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85EEEC151BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.xib */; };
 		85FA99991BF60C4B009C0F8B /* SFMapFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FA99981BF60C4B009C0F8B /* SFMapFriendTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -208,9 +184,6 @@
 		854262521BECAD3F00A59D80 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		854262531BECAD3F00A59D80 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
 		854262541BECAD3F00A59D80 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
-		854262591BECAD7500A59D80 /* SFViewController_FancyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController_FancyButton.h; sourceTree = "<group>"; };
-		8542625A1BECAD7500A59D80 /* SFViewController_FancyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController_FancyButton.m; sourceTree = "<group>"; };
-		8542625B1BECAD7500A59D80 /* SFViewController_FancyButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFViewController_FancyButton.xib; sourceTree = "<group>"; };
 		8542625E1BECADCA00A59D80 /* FancyTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FancyTabBarDelegate.h; sourceTree = "<group>"; };
 		855621A51BEDAEBB0035EE41 /* SFFriendsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFriendsView.h; sourceTree = "<group>"; };
 		855621A61BEDAEBB0035EE41 /* SFFriendsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFriendsView.m; sourceTree = "<group>"; };
@@ -307,9 +280,6 @@
 		8556254A1BEDEB460035EE41 /* UUMessageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUMessageFrame.m; sourceTree = "<group>"; };
 		8556254B1BEDEB460035EE41 /* UUProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUProgressHUD.h; sourceTree = "<group>"; };
 		8556254C1BEDEB460035EE41 /* UUProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUProgressHUD.m; sourceTree = "<group>"; };
-		855625811BEDEB650035EE41 /* SFtestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFtestViewController.h; sourceTree = "<group>"; };
-		855625821BEDEB650035EE41 /* SFtestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFtestViewController.m; sourceTree = "<group>"; };
-		855625831BEDEB650035EE41 /* SFtestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFtestViewController.xib; sourceTree = "<group>"; };
 		8568159E1BE5C8D2005FCC50 /* SFMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMeTableViewController.h; sourceTree = "<group>"; };
 		8568159F1BE5C8D2005FCC50 /* SFMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMeTableViewController.m; sourceTree = "<group>"; };
 		856815A11BE5C8DE005FCC50 /* SFFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFriendsTableViewController.h; sourceTree = "<group>"; };
@@ -332,30 +302,12 @@
 		85689E071BF87DCD00DE87FD /* LTInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTInfiniteScrollView.m; sourceTree = "<group>"; };
 		856F32A51BEB70BE00E1EF73 /* SFMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMapManager.h; sourceTree = "<group>"; };
 		856F32A61BEB70BE00E1EF73 /* SFMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMapManager.m; sourceTree = "<group>"; };
-		856F32A91BEC6E9100E1EF73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		856F32AA1BEC6E9100E1EF73 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		856F32AC1BEC6E9A00E1EF73 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		856F32AD1BEC6E9A00E1EF73 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		856F32AE1BEC6E9A00E1EF73 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		856F32AF1BEC6E9A00E1EF73 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		856F32B01BEC6E9A00E1EF73 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		856F32B11BEC6E9A00E1EF73 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		856F32B21BEC6E9A00E1EF73 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
-		856F32B31BEC6E9A00E1EF73 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
-		856F32B41BEC6E9A00E1EF73 /* MiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleViewController.h; sourceTree = "<group>"; };
-		856F32B51BEC6E9A00E1EF73 /* MiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleViewController.m; sourceTree = "<group>"; };
 		856F32BB1BEC74CE00E1EF73 /* SFMainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainTabbarController.h; sourceTree = "<group>"; };
 		856F32BC1BEC74CE00E1EF73 /* SFMainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMainTabbarController.m; sourceTree = "<group>"; };
 		856FF7411BF2FABC004AC460 /* SFDataMetalTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataMetalTool.h; sourceTree = "<group>"; };
 		856FF7421BF2FABC004AC460 /* SFDataMetalTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataMetalTool.m; sourceTree = "<group>"; };
-		856FF7451BF30484004AC460 /* SFTableViewController_JsonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableViewController_JsonTest.h; sourceTree = "<group>"; };
-		856FF7461BF30484004AC460 /* SFTableViewController_JsonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableViewController_JsonTest.m; sourceTree = "<group>"; };
-		856FF7471BF30484004AC460 /* SFTableViewController_JsonTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFTableViewController_JsonTest.xib; sourceTree = "<group>"; };
 		8571898E1BE72C070062FB94 /* SFPersonalSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPersonalSignViewController.h; sourceTree = "<group>"; };
 		8571898F1BE72C070062FB94 /* SFPersonalSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPersonalSignViewController.m; sourceTree = "<group>"; };
-		857189D61BE789050062FB94 /* SFViewController_TestPopActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController_TestPopActionSheet.h; sourceTree = "<group>"; };
-		857189D71BE789050062FB94 /* SFViewController_TestPopActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController_TestPopActionSheet.m; sourceTree = "<group>"; };
-		857189D81BE789050062FB94 /* SFViewController_TestPopActionSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFViewController_TestPopActionSheet.xib; sourceTree = "<group>"; };
 		8571AC3F1BEA173B004A01FF /* SFApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFApplication.h; sourceTree = "<group>"; };
 		8571AC401BEA173B004A01FF /* SFApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFApplication.m; sourceTree = "<group>"; };
 		857B70321BE87A0B004A85D8 /* SFAnimatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFAnimatePickerView.h; path = ../Tools/SFAnimatePickerView.h; sourceTree = "<group>"; };
@@ -364,11 +316,6 @@
 		857E6F6F1BF6F535002590F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		857E6F721BF72CEF002590F3 /* SFPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPersonTableViewCell.h; sourceTree = "<group>"; };
 		857E6F731BF72CEF002590F3 /* SFPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPersonTableViewCell.m; sourceTree = "<group>"; };
-		857E6F751BF73408002590F3 /* SFHeadViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHeadViewTableViewController.h; sourceTree = "<group>"; };
-		857E6F761BF73408002590F3 /* SFHeadViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHeadViewTableViewController.m; sourceTree = "<group>"; };
-		857E6F791BF736A6002590F3 /* SFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFView.h; sourceTree = "<group>"; };
-		857E6F7A1BF736A6002590F3 /* SFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFView.m; sourceTree = "<group>"; };
-		857E6F7C1BF736B5002590F3 /* SFView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFView.xib; sourceTree = "<group>"; };
 		8592F3271BE0B12D007B702C /* DonkeyMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonkeyMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8592F32B1BE0B12D007B702C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8592F32C1BE0B12D007B702C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -403,9 +350,6 @@
 		85A27E321BF0623C00DD31A5 /* SFInputText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFInputText.m; sourceTree = "<group>"; };
 		85A27E341BF06CD200DD31A5 /* SFPersonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPersonHeadView.h; sourceTree = "<group>"; };
 		85A27E351BF06CD200DD31A5 /* SFPersonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPersonHeadView.m; sourceTree = "<group>"; };
-		85AD75721BEA2A89001A1403 /* LocationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDemoViewController.h; sourceTree = "<group>"; };
-		85AD75731BEA2A89001A1403 /* LocationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDemoViewController.m; sourceTree = "<group>"; };
-		85AD75741BEA2A89001A1403 /* LocationDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationDemoViewController.xib; sourceTree = "<group>"; };
 		85AF492E1BE8C85C00D838F0 /* SFFriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFriendsTableViewCell.h; sourceTree = "<group>"; };
 		85AF492F1BE8C85C00D838F0 /* SFFriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFriendsTableViewCell.m; sourceTree = "<group>"; };
 		85AF49301BE8C85C00D838F0 /* SFFriendsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFFriendsTableViewCell.xib; sourceTree = "<group>"; };
@@ -413,9 +357,6 @@
 		85AF49351BE8CD8600D838F0 /* SFFriendEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFriendEntity.m; sourceTree = "<group>"; };
 		85B41AED1BE1ED6900B91400 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		85B41AEE1BE1ED6900B91400 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		85B41AF51BE1EE5C00B91400 /* SFCommunicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCommunicationViewController.h; path = ../Controllers/SFCommunicationViewController.h; sourceTree = "<group>"; };
-		85B41AF61BE1EE5C00B91400 /* SFCommunicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCommunicationViewController.m; path = ../Controllers/SFCommunicationViewController.m; sourceTree = "<group>"; };
-		85B41AF71BE1EE5C00B91400 /* SFCommunicationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SFCommunicationViewController.xib; path = ../Controllers/SFCommunicationViewController.xib; sourceTree = "<group>"; };
 		85B41AFA1BE2078800B91400 /* SFBaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseEntity.h; sourceTree = "<group>"; };
 		85B41AFB1BE2078800B91400 /* SFBaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseEntity.m; sourceTree = "<group>"; };
 		85B41AFD1BE2079A00B91400 /* SFPersonEnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPersonEnity.h; sourceTree = "<group>"; };
@@ -426,7 +367,6 @@
 		85B41B041BE22F1600B91400 /* SFMessageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMessageEntity.m; sourceTree = "<group>"; };
 		85D1A5661BF365D00063BC6E /* SFHeartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHeartManager.h; sourceTree = "<group>"; };
 		85D1A5671BF365D00063BC6E /* SFHeartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHeartManager.m; sourceTree = "<group>"; };
-		85EEEB971BE3366E00D63A00 /* test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 		85EEEBD41BE3814100D63A00 /* SFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConstants.h; sourceTree = "<group>"; };
 		85EEEBD51BE3814100D63A00 /* SFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFConstants.m; sourceTree = "<group>"; };
 		85EEEBDB1BE470AB00D63A00 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -464,9 +404,6 @@
 		85EEEBFB1BE470AB00D63A00 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		85EEEC101BE475C500D63A00 /* SFAnnotationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAnnotationEntity.h; sourceTree = "<group>"; };
 		85EEEC111BE475C500D63A00 /* SFAnnotationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAnnotationEntity.m; sourceTree = "<group>"; };
-		85EEEC131BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController_TEST_SDWebImage.h; sourceTree = "<group>"; };
-		85EEEC141BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController_TEST_SDWebImage.m; sourceTree = "<group>"; };
-		85EEEC151BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFViewController_TEST_SDWebImage.xib; sourceTree = "<group>"; };
 		85FA99971BF60C4B009C0F8B /* SFMapFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFMapFriendTableViewCell.h; path = ../SFMapFriendTableViewCell.h; sourceTree = "<group>"; };
 		85FA99981BF60C4B009C0F8B /* SFMapFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFMapFriendTableViewCell.m; path = ../SFMapFriendTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -507,13 +444,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8509445A1BECC734000FFAD3 /* 无限无责器2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "无限无责器2";
-			sourceTree = "<group>";
-		};
 		853AD71C1BF1BF1F00210A03 /* Tracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,23 +480,6 @@
 				854262541BECAD3F00A59D80 /* UIView+Screenshot.m */,
 			);
 			path = FancyTabBar;
-			sourceTree = "<group>";
-		};
-		855621AF1BEDCCD20035EE41 /* 好友列表 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "好友列表";
-			sourceTree = "<group>";
-		};
-		855621B01BEDD67B0035EE41 /* 聊天 */ = {
-			isa = PBXGroup;
-			children = (
-				855625811BEDEB650035EE41 /* SFtestViewController.h */,
-				855625821BEDEB650035EE41 /* SFtestViewController.m */,
-				855625831BEDEB650035EE41 /* SFtestViewController.xib */,
-			);
-			name = "聊天";
 			sourceTree = "<group>";
 		};
 		855621B41BEDD7F50035EE41 /* Chat */ = {
@@ -786,62 +699,11 @@
 			path = "地图";
 			sourceTree = "<group>";
 		};
-		856F32A81BEC6E5A00E1EF73 /* 弹出效果 */ = {
-			isa = PBXGroup;
-			children = (
-				856F32AC1BEC6E9A00E1EF73 /* FirstViewController.h */,
-				856F32AD1BEC6E9A00E1EF73 /* FirstViewController.m */,
-				856F32AE1BEC6E9A00E1EF73 /* SecondViewController.h */,
-				856F32AF1BEC6E9A00E1EF73 /* SecondViewController.m */,
-				856F32B01BEC6E9A00E1EF73 /* ThirdViewController.h */,
-				856F32B11BEC6E9A00E1EF73 /* ThirdViewController.m */,
-				856F32B21BEC6E9A00E1EF73 /* FourViewController.h */,
-				856F32B31BEC6E9A00E1EF73 /* FourViewController.m */,
-				856F32B41BEC6E9A00E1EF73 /* MiddleViewController.h */,
-				856F32B51BEC6E9A00E1EF73 /* MiddleViewController.m */,
-				856F32A91BEC6E9100E1EF73 /* ViewController.h */,
-				856F32AA1BEC6E9100E1EF73 /* ViewController.m */,
-			);
-			name = "弹出效果";
-			sourceTree = "<group>";
-		};
-		856F32DF1BECA89C00E1EF73 /* 弹出菜单 */ = {
-			isa = PBXGroup;
-			children = (
-				854262591BECAD7500A59D80 /* SFViewController_FancyButton.h */,
-				8542625A1BECAD7500A59D80 /* SFViewController_FancyButton.m */,
-				8542625B1BECAD7500A59D80 /* SFViewController_FancyButton.xib */,
-			);
-			name = "弹出菜单";
-			sourceTree = "<group>";
-		};
-		856FF7441BF30459004AC460 /* Json转换测试 */ = {
-			isa = PBXGroup;
-			children = (
-				856FF7451BF30484004AC460 /* SFTableViewController_JsonTest.h */,
-				856FF7461BF30484004AC460 /* SFTableViewController_JsonTest.m */,
-				856FF7471BF30484004AC460 /* SFTableViewController_JsonTest.xib */,
-			);
-			name = "Json转换测试";
-			sourceTree = "<group>";
-		};
 		857E6F711BF72417002590F3 /* 视图通 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "视图通";
-			sourceTree = "<group>";
-		};
-		857E6F781BF73675002590F3 /* xib视图测试i */ = {
-			isa = PBXGroup;
-			children = (
-				857E6F751BF73408002590F3 /* SFHeadViewTableViewController.h */,
-				857E6F761BF73408002590F3 /* SFHeadViewTableViewController.m */,
-				857E6F791BF736A6002590F3 /* SFView.h */,
-				857E6F7A1BF736A6002590F3 /* SFView.m */,
-				857E6F7C1BF736B5002590F3 /* SFView.xib */,
-			);
-			name = "xib视图测试i";
 			sourceTree = "<group>";
 		};
 		8592F31E1BE0B12D007B702C = {
@@ -1058,26 +920,6 @@
 		85EEEB961BE3366100D63A00 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				857E6F781BF73675002590F3 /* xib视图测试i */,
-				856FF7441BF30459004AC460 /* Json转换测试 */,
-				855621B01BEDD67B0035EE41 /* 聊天 */,
-				855621AF1BEDCCD20035EE41 /* 好友列表 */,
-				8509445A1BECC734000FFAD3 /* 无限无责器2 */,
-				856F32DF1BECA89C00E1EF73 /* 弹出菜单 */,
-				856F32A81BEC6E5A00E1EF73 /* 弹出效果 */,
-				85AD75721BEA2A89001A1403 /* LocationDemoViewController.h */,
-				85AD75731BEA2A89001A1403 /* LocationDemoViewController.m */,
-				85AD75741BEA2A89001A1403 /* LocationDemoViewController.xib */,
-				85EEEB971BE3366E00D63A00 /* test */,
-				85EEEC131BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.h */,
-				85EEEC141BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.m */,
-				85EEEC151BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.xib */,
-				857189D61BE789050062FB94 /* SFViewController_TestPopActionSheet.h */,
-				857189D71BE789050062FB94 /* SFViewController_TestPopActionSheet.m */,
-				857189D81BE789050062FB94 /* SFViewController_TestPopActionSheet.xib */,
-				85B41AF51BE1EE5C00B91400 /* SFCommunicationViewController.h */,
-				85B41AF61BE1EE5C00B91400 /* SFCommunicationViewController.m */,
-				85B41AF71BE1EE5C00B91400 /* SFCommunicationViewController.xib */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -1216,30 +1058,22 @@
 			files = (
 				8556256C1BEDEB460035EE41 /* 1.jpeg in Resources */,
 				8556256B1BEDEB460035EE41 /* 0.jpeg in Resources */,
-				8542625D1BECAD7500A59D80 /* SFViewController_FancyButton.xib in Resources */,
 				855625671BEDEB460035EE41 /* chat_voice_record.png in Resources */,
 				856815BC1BE600BC005FCC50 /* SFMeTableViewController.xib in Resources */,
 				857B70381BE87A38004A85D8 /* SFAnimatePickerView.xib in Resources */,
 				8556255D1BEDEB460035EE41 /* chat_animation2.png in Resources */,
 				8592F3791BE0E0C2007B702C /* SFMapViewController.xib in Resources */,
-				855625851BEDEB650035EE41 /* SFtestViewController.xib in Resources */,
-				85EEEB981BE3366E00D63A00 /* test in Resources */,
-				85AD75761BEA2A89001A1403 /* LocationDemoViewController.xib in Resources */,
 				855621A91BEDAECA0035EE41 /* SFFriendsView.xib in Resources */,
 				853AD7241BF1BF7900210A03 /* AMap.bundle in Resources */,
 				855625621BEDEB460035EE41 /* chat_ipunt_message.png in Resources */,
 				855625651BEDEB460035EE41 /* chat_send_message.png in Resources */,
 				8556256A1BEDEB460035EE41 /* chatto_bg_normal.png in Resources */,
 				855625561BEDEB460035EE41 /* MJRefresh.bundle in Resources */,
-				85EEEC171BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.xib in Resources */,
 				8556255E1BEDEB460035EE41 /* chat_animation3.png in Resources */,
 				85AF49321BE8C85C00D838F0 /* SFFriendsTableViewCell.xib in Resources */,
-				85B41AF91BE1EE5C00B91400 /* SFCommunicationViewController.xib in Resources */,
 				857E6F701BF6F535002590F3 /* Main.storyboard in Resources */,
 				855625691BEDEB460035EE41 /* chatfrom_doctor_icon.png in Resources */,
-				857E6F7D1BF736B5002590F3 /* SFView.xib in Resources */,
 				8556255F1BEDEB460035EE41 /* chat_animation_white1.png in Resources */,
-				856FF7491BF30484004AC460 /* SFTableViewController_JsonTest.xib in Resources */,
 				8592F3751BE0BF46007B702C /* mapapi.bundle in Resources */,
 				855621AE1BEDC01F0035EE41 /* SFCommunicationdialog.xib in Resources */,
 				853AD7271BF1BF7900210A03 /* GuGong.tracking in Resources */,
@@ -1248,7 +1082,6 @@
 				856815C31BE6051E005FCC50 /* SFMyHeadView.xib in Resources */,
 				8592F33B1BE0B12D007B702C /* LaunchScreen.xib in Resources */,
 				8556255C1BEDEB460035EE41 /* chat_animation1.png in Resources */,
-				857189DA1BE789050062FB94 /* SFViewController_TestPopActionSheet.xib in Resources */,
 				855625641BEDEB460035EE41 /* Chat_record_circle.png in Resources */,
 				853AD7251BF1BF7900210A03 /* ball.png in Resources */,
 				855625681BEDEB460035EE41 /* chatfrom_bg_normal.png in Resources */,
@@ -1276,12 +1109,10 @@
 			files = (
 				853AD71B1BF1BDF500210A03 /* SFTrackingManager.m in Sources */,
 				855625731BEDEB460035EE41 /* UIProgressView+AFNetworking.m in Sources */,
-				856F32B71BEC6E9A00E1EF73 /* SecondViewController.m in Sources */,
 				855625801BEDEB460035EE41 /* UUProgressHUD.m in Sources */,
 				85689E081BF87DCD00DE87FD /* LTInfiniteScrollView.m in Sources */,
 				85B41AEF1BE1ED6900B91400 /* GCDAsyncSocket.m in Sources */,
 				85689E041BF872B300DE87FD /* SFImageViewController.m in Sources */,
-				856F32B81BEC6E9A00E1EF73 /* ThirdViewController.m in Sources */,
 				854262551BECAD3F00A59D80 /* Coordinate.m in Sources */,
 				8556256E1BEDEB460035EE41 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				8556257D1BEDEB460035EE41 /* UUMessageCell.m in Sources */,
@@ -1294,7 +1125,6 @@
 				8592F3331BE0B12D007B702C /* SFMapViewController.m in Sources */,
 				855625591BEDEB460035EE41 /* MJRefreshFooterView.m in Sources */,
 				8556257F1BEDEB460035EE41 /* UUMessageFrame.m in Sources */,
-				85AD75751BEA2A89001A1403 /* LocationDemoViewController.m in Sources */,
 				855625521BEDEB460035EE41 /* AFURLConnectionOperation.m in Sources */,
 				85D1A5681BF365D00063BC6E /* SFHeartManager.m in Sources */,
 				85EEEC041BE470AB00D63A00 /* SDWebImagePrefetcher.m in Sources */,
@@ -1302,14 +1132,11 @@
 				85AF49311BE8C85C00D838F0 /* SFFriendsTableViewCell.m in Sources */,
 				85AF49361BE8CD8600D838F0 /* SFFriendEntity.m in Sources */,
 				85EEEC031BE470AB00D63A00 /* SDWebImageManager.m in Sources */,
-				85B41AF81BE1EE5C00B91400 /* SFCommunicationViewController.m in Sources */,
 				857B70341BE87A0B004A85D8 /* SFAnimatePickerView.m in Sources */,
 				8592F3301BE0B12D007B702C /* AppDelegate.mm in Sources */,
 				855625781BEDEB460035EE41 /* ChatModel.m in Sources */,
-				856F32B61BEC6E9A00E1EF73 /* FirstViewController.m in Sources */,
 				855625711BEDEB460035EE41 /* UIButton+AFNetworking.m in Sources */,
 				856F32BD1BEC74CE00E1EF73 /* SFMainTabbarController.m in Sources */,
-				856FF7481BF30484004AC460 /* SFTableViewController_JsonTest.m in Sources */,
 				85EEEC0A1BE470AB00D63A00 /* UIImageView+WebCache.m in Sources */,
 				856815B51BE5F7A9005FCC50 /* SFMyDetailTableViewController.m in Sources */,
 				856F32A71BEB70BE00E1EF73 /* SFMapManager.m in Sources */,
@@ -1323,14 +1150,12 @@
 				854262561BECAD3F00A59D80 /* FancyTabBar.m in Sources */,
 				857E6F741BF72CEF002590F3 /* SFPersonTableViewCell.m in Sources */,
 				85EEEC071BE470AB00D63A00 /* UIImage+MultiFormat.m in Sources */,
-				857189D91BE789050062FB94 /* SFViewController_TestPopActionSheet.m in Sources */,
 				855625541BEDEB460035EE41 /* AFURLResponseSerialization.m in Sources */,
 				85EEEC081BE470AB00D63A00 /* UIImage+WebP.m in Sources */,
 				85A27E331BF0623C00DD31A5 /* SFInputText.m in Sources */,
 				85EEEC021BE470AB00D63A00 /* SDWebImageDownloaderOperation.m in Sources */,
 				85689E011BF872A800DE87FD /* SFNameViewController.m in Sources */,
 				855625771BEDEB460035EE41 /* Mp3Recorder.m in Sources */,
-				857E6F7B1BF736A6002590F3 /* SFView.m in Sources */,
 				855625511BEDEB460035EE41 /* AFSecurityPolicy.m in Sources */,
 				85EEEC0B1BE470AB00D63A00 /* UIView+WebCacheOperation.m in Sources */,
 				856815C21BE6051E005FCC50 /* SFMyHeadView.m in Sources */,
@@ -1341,12 +1166,9 @@
 				856815AF1BE5E11C005FCC50 /* SFWorldViewController.m in Sources */,
 				856815AC1BE5E0A4005FCC50 /* SFShareViewController.m in Sources */,
 				8556257B1BEDEB460035EE41 /* UUInputFunctionView.m in Sources */,
-				8542625C1BECAD7500A59D80 /* SFViewController_FancyButton.m in Sources */,
 				85B41B021BE2269900B91400 /* SFCommucationTool.m in Sources */,
-				855625841BEDEB650035EE41 /* SFtestViewController.m in Sources */,
 				8556254F1BEDEB460035EE41 /* AFHTTPSessionManager.m in Sources */,
 				85B41AFC1BE2078800B91400 /* SFBaseEntity.m in Sources */,
-				85EEEC161BE47B5600D63A00 /* SFViewController_TEST_SDWebImage.m in Sources */,
 				853AD71F1BF1BF6400210A03 /* Tracking.m in Sources */,
 				85B41AFF1BE2079A00B91400 /* SFPersonEnity.m in Sources */,
 				856815A31BE5C8DE005FCC50 /* SFFriendsTableViewController.m in Sources */,
@@ -1365,20 +1187,16 @@
 				856FF7431BF2FABC004AC460 /* SFDataMetalTool.m in Sources */,
 				857189901BE72C070062FB94 /* SFPersonalSignViewController.m in Sources */,
 				855625581BEDEB460035EE41 /* MJRefreshConst.m in Sources */,
-				857E6F771BF73408002590F3 /* SFHeadViewTableViewController.m in Sources */,
 				8556257E1BEDEB460035EE41 /* UUMessageContentButton.m in Sources */,
 				855625791BEDEB460035EE41 /* UUAVAudioPlayer.m in Sources */,
 				855625531BEDEB460035EE41 /* AFURLRequestSerialization.m in Sources */,
 				8556254E1BEDEB460035EE41 /* AFHTTPRequestOperationManager.m in Sources */,
 				85EEEBFD1BE470AB00D63A00 /* NSData+ImageContentType.m in Sources */,
-				856F32AB1BEC6E9100E1EF73 /* ViewController.m in Sources */,
 				8556255B1BEDEB460035EE41 /* NSDate+Utils.m in Sources */,
 				855621AC1BEDBFEF0035EE41 /* SFCommunicationdialog.m in Sources */,
-				856F32B91BEC6E9A00E1EF73 /* FourViewController.m in Sources */,
 				85EEEC121BE475C500D63A00 /* SFAnnotationEntity.m in Sources */,
 				8556257C1BEDEB460035EE41 /* UUMessage.m in Sources */,
 				8592F32D1BE0B12D007B702C /* main.m in Sources */,
-				856F32BA1BEC6E9A00E1EF73 /* MiddleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

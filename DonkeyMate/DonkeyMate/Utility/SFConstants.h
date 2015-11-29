@@ -33,6 +33,10 @@
 //心跳间隔
 #define HEART_INTERVAL 4
 
+/**************心跳管理***************/
+//主题色
+#define THEME_COLOR [UIColor colorWithRed:0.709804 green:0.784314 blue:0.917647 alpha:0.1]
+
 @interface SFConstants : NSObject
 
 /**

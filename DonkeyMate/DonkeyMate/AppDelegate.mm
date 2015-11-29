@@ -8,25 +8,12 @@
 
 #import "AppDelegate.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
-#import "SFCommunicationViewController.h"
 #import "SFMapViewController.h"
-#import "SFCommucationTool.h"
-#import "SFViewController_TEST_SDWebImage.h"
-#import "SFViewController_TestPopActionSheet.h"
 #import "SFConstants.h"
-#import "LocationDemoViewController.h"
-#import "SFViewController_FancyButton.h"
-#import "ViewController.h"
-#import "SFtestViewController.h"
 #import "SFTrackingManager.h"
-#import "SFTableViewController_JsonTest.h"
 #import "SFHeartManager.h"
 #import "SFApplication.h"
-#import "SFHeadViewTableViewController.h"
-#import "SFImageViewController.h"
-
-
-
+#import "SFCommucationTool.h"
 
 //NAMESPACE_BAIDU_FRAMEWORK_USE
 
@@ -35,8 +22,6 @@ BMKMapManager* _mapManager;
 
 @synthesize window;
 
-
-#pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -51,7 +36,9 @@ BMKMapManager* _mapManager;
     [self customTabbar];
     
     //测试
-    [self test];
+//    [self test];
+    
+//    你说的开发
     
     return YES;
 }
@@ -88,10 +75,7 @@ BMKMapManager* _mapManager;
 }
 
 -(void)test{
-    
-    SFImageViewController *imageVC = [SFImageViewController new];
-    
-    
+
     
     
 //    SFHeadViewTableViewController *headViewVC = [SFHeadViewTableViewController new];
@@ -113,10 +97,10 @@ BMKMapManager* _mapManager;
 //    
 //    [SFTrackingManager trackingFiles];
 //    
-    self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = imageVC;
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window.frame = [UIScreen mainScreen].bounds;
+//    self.window.rootViewController = imageVC;
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
