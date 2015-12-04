@@ -15,7 +15,7 @@
  *  系统用户单例对象
  */
 static SFPersonEnity *_user;
-+(SFPersonEnity *)defoultSystemUser{
++(SFPersonEnity *)currentUser{
     if (_user==nil) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
@@ -51,7 +51,7 @@ static SFHeartManager *_heartManager;
 +(id)defaultHeartManger{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _heartManager = [[SFHeartManager alloc]initWithSelf:[SFApplication defoultSystemUser]];
+        _heartManager = [[SFHeartManager alloc]initWithSelf:[SFApplication currentUser]];
     });
     return _heartManager;
 }

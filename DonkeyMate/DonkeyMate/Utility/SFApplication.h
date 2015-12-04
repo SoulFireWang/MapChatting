@@ -18,9 +18,10 @@
 @property (nonatomic, assign)BOOL isLocateOn;
 
 /**
- *  APP用户
+ *  当前用户
  */
-+(SFPersonEnity *)defoultSystemUser;
++(SFPersonEnity *)currentUser;
+
 
 +(SFApplication *)defaultApplication;
 

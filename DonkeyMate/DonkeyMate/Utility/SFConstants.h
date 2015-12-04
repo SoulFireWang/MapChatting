@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+/**************系统***************/
+#define CURRENT_USER [SFApplication defoultSystemUser]//当前用户
+#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;//对象弱引用设置
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width//屏幕长度
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height//屏幕宽度
+
+
+/**************主题色***************/
+//主题色
+#define THEME_COLOR [UIColor colorWithRed:0.709804 green:0.784314 blue:0.917647 alpha:0.1]
+
+
 /**************服务器配置**************/
 //服务器地址
 #define SERVICE_IP_ADDRESS @"192.168.5.129"
@@ -16,10 +29,12 @@
 //命令标示符
 #define COMMAND_SPERAOTR @"%soulfirewangiscool%"
 
-/*********头像大小配置视图控制*********/
+/*********尺寸设置*********/
 #define LENGTH_HEAD_VIEW 44 //头视图
 #define LENGTH_HEAD_SPACE (LENGTH_HEAD_VIEW + 5) //头视图所需要的空间
 #define LENGTH_INPUT_LENTGTH (Main_Screen_Width - LENGTH_HEAD_SPACE - 5 - 20) //输入框长度
+
+#define HEIGHT_ONLINE_PERSON_TABLE_CELL 70//单元格长度
 
 /**************路径文件**************/
 //路径文件路劲
@@ -33,17 +48,4 @@
 //心跳间隔
 #define HEART_INTERVAL 4
 
-/**************心跳管理***************/
-//主题色
-#define THEME_COLOR [UIColor colorWithRed:0.709804 green:0.784314 blue:0.917647 alpha:0.1]
 
-@interface SFConstants : NSObject
-
-/**
- *  主题色
- *
- *  @return 返回主题色
- */
-+(UIColor *)themeColor;
-
-@end

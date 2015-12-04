@@ -15,6 +15,8 @@
 #import "SFApplication.h"
 #import "SFCommucationTool.h"
 
+#import "SFTestViewController.h"
+
 //NAMESPACE_BAIDU_FRAMEWORK_USE
 
 BMKMapManager* _mapManager;
@@ -36,7 +38,7 @@ BMKMapManager* _mapManager;
     [self customTabbar];
     
     //测试
-//    [self test];
+    [self test];
     
 //    你说的开发
     
@@ -51,8 +53,8 @@ BMKMapManager* _mapManager;
 }
 
 -(void)customTabbar{
-    [[UITabBar appearance]setTintColor:[SFConstants themeColor]];
-    [[UINavigationBar appearance] setBarTintColor:[SFConstants themeColor]];
+    [[UITabBar appearance]setTintColor:THEME_COLOR];
+    [[UINavigationBar appearance] setBarTintColor:THEME_COLOR];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
 }
@@ -61,7 +63,7 @@ BMKMapManager* _mapManager;
 -(void)connnectToService{
     
     //连接到通讯服务器
-    [[SFCommucationTool sharedAsyCommunictionSocket]connectToHostWithIpAddress:SERVICE_IP_ADDRESS andPerson:[SFApplication defoultSystemUser]];
+    [[SFCommucationTool sharedAsyCommunictionSocket]connectToHostWithIpAddress:SERVICE_IP_ADDRESS andPerson:[SFApplication currentUser]];
     
 }
 
@@ -76,31 +78,13 @@ BMKMapManager* _mapManager;
 
 -(void)test{
 
+    SFTestViewController *vc = [SFTestViewController new];
+
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController = vc;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
-    
-//    SFHeadViewTableViewController *headViewVC = [SFHeadViewTableViewController new];
-    
-//    [SFTrackingManager trackingFiles];
-    
-//    SFMapViewController *mapViewController = [SFMapViewController new];
-    
-//    NSString *filePath = [[NSBundle mainBundle]pathForResource:@"GuGong" ofType:@"tracking"];
-//    
-//    NSData *data = [NSData dataWithContentsOfFile:filePath];
-//    [data writeToFile:filePath options:0 error:nil];
-//    
-//    [SFTrackingManager saveTrackingWithName:@"元旦毅行" andData:data];
-//    [SFTrackingManager saveTrackingWithName:@"周末跑步" andData:data];
-//    [SFTrackingManager saveTrackingWithName:@"马拉松练习" andData:data];
-//    [SFTrackingManager saveTrackingWithName:@"川藏线" andData:data];
-//    [SFTrackingManager saveTrackingWithName:@"穿越故宫" andData:data];
-//    
-//    [SFTrackingManager trackingFiles];
-//    
-//    self.window.frame = [UIScreen mainScreen].bounds;
-//    self.window.rootViewController = imageVC;
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

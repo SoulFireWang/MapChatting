@@ -53,7 +53,7 @@
  
     SFAnimatePickerView *animatePickerView = (SFAnimatePickerView *)[[[NSBundle mainBundle] loadNibNamed:@"SFAnimatePickerView" owner:nil options:nil] firstObject];
     animatePickerView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 160);
-    animatePickerView.toolbar.barTintColor = [SFConstants themeColor];
+    animatePickerView.toolbar.barTintColor = THEME_COLOR;
     [view.superview addSubview:animatePickerView];
     return animatePickerView;
     

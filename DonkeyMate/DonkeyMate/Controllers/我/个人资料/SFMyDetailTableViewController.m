@@ -92,7 +92,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.person = [SFApplication defoultSystemUser];
+    self.person = [SFApplication currentUser];
     
     [self setView];
     

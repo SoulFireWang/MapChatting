@@ -9,7 +9,6 @@
 #import "SFCommucationTool.h"
 #import "SFMessageEntity.h"
 #import "SFApplication.h"
-#import "SFDataMetalTool.h"
 
 @interface SFCommucationTool()<GCDAsyncSocketDelegate>
 

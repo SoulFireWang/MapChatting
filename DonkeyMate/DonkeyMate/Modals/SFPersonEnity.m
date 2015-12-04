@@ -15,4 +15,5 @@
     }
     return _chattingContent;
 }
+
 @end

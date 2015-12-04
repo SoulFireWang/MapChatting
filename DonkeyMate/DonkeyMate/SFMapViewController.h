@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import "SFBaseVC.h"
 
-@interface SFMapViewController : UIViewController<BMKMapViewDelegate, BMKLocationServiceDelegate>
+@interface SFMapViewController : SFBaseVC<BMKMapViewDelegate, BMKLocationServiceDelegate>
 
 @property (strong, nonatomic) IBOutlet BMKMapView *mapView;
 

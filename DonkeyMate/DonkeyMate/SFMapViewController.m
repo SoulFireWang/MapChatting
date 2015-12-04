@@ -230,7 +230,7 @@
 }
 
 -(void)personalInfoDidChanged{
-    [self.myHeadView setPerson:[SFApplication defoultSystemUser]];
+    [self.myHeadView setPerson:[SFApplication currentUser]];
     
 //    self.person.imageURL = imageURL;
 //    self.photoImageView.image = [UIImage imageNamed:imageURL];
@@ -442,7 +442,7 @@
     
     //跟新位置后，将用户更新到界面上
     //跟新系统用户位置
-    [SFApplication defoultSystemUser].coordinate = userLocation.location.coordinate;
+    [SFApplication currentUser].coordinate = userLocation.location.coordinate;
     /**
         这里取消了消息发送原因：
         在心跳管理器中循环发送心跳，如果经纬度都为0，则不发送，所以如果定位到了，就会有心跳消息发出，显示在界面上
@@ -579,6 +579,8 @@
 -(void)showTrackingListInView:(UIView *)view{
     if(_tracksTableView == nil)
     {
+        
+        
         CGRect rect = CGRectMake(10, 97, 300, 300);
         _tracksTableView = [[UITableView alloc]initWithFrame:rect style:0];
         _tracksTableView.dataSource = self;
@@ -603,9 +605,14 @@
 
 #pragma mark --- UITableViewDataSource/UITableViewDelegate
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 20;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView == self.friendsTableView) {
-        return self.heartManager.friendsOnline.count;
+        
+        return 1;
     }
     else if(tableView == self.tracksTableView){
         return self.tracks.count;
@@ -620,7 +627,7 @@
         SFPersonTableViewCell *personCell = (SFPersonTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CUSTOM_TABLE_CELL_STYLE_FRIEND forIndexPath:indexPath];
         NSArray *array = self.heartManager.friendsOnline;
         
-        personCell.person = array[indexPath.row];
+        personCell.person = [SFApplication currentUser];
         
         return personCell;
     }else if(tableView == self.tracksTableView){
@@ -650,6 +657,10 @@
     view.frame = CGRectMake(0, 0, 300, 30);
     view.backgroundColor = [UIColor clearColor];
     return view;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return HEIGHT_ONLINE_PERSON_TABLE_CELL;
 }
 
 
@@ -760,18 +771,6 @@
  */
 - (void)UUInputFunctionView:(UUInputFunctionView *)funcView sendMessage:(NSString *)message
 {
-    //测试
-    //有键盘个人视角切换
-//    [SFMapManager adjustRegionForKeyboardOnAndSingleChattingWithSpeaker:[SFApplication defoultSystemUser] andMapView:self.mapView andLocationService:self.locService];
-//
-//    //无键盘个人视角切换
-//    [SFMapManager adjustRegionForKeyboardOffAndSingleChattingWithSpeaker:[SFApplication defoultSystemUser] andMapView:self.mapView andLocationService:self.locService];
-    
-    //有键盘群体视角切换
-//    [SFMapManager adjustRegionForKeyboardOnAndGourpChattingWithSpeaker:self.heartManager.friendsOnline andMapView:self.mapView andLocationService:self.locService];
-    
-//    //无键盘群体视角切换
-//    [SFMapManager adjustRegionForKeyboardOffAndGroupChattingWithSpeaker:self.heartManager.friendsOnline andMapView:self.mapView andLocationService:self.locService];
     
     SFMessageEntity *messageEntity = [SFMessageEntity new];
     messageEntity.content = message;
@@ -779,7 +778,7 @@
     self.inputView.TextViewInput.text = @"";
     
     //发送消息
-    [[SFCommucationTool sharedAsyCommunictionSocket] sendMessageWithMessage:message andPerson:[SFApplication defoultSystemUser]];
+    [[SFCommucationTool sharedAsyCommunictionSocket] sendMessageWithMessage:message andPerson:[SFApplication currentUser]];
 }
 
 /**
@@ -927,7 +926,7 @@
 
 - (SFPersonEnity *)currentFriend {
 	if(_currentFriend == nil) {
-		_currentFriend = [SFApplication defoultSystemUser];
+		_currentFriend = [SFApplication currentUser];
 	}
 	return _currentFriend;
 }
@@ -1000,20 +999,25 @@
 - (UITableView *)friendsTableView {
     if(_friendsTableView == nil)
     {
-        CGRect rect = CGRectMake(10, 70, 300, 400);
-        _friendsTableView = [[UITableView alloc]initWithFrame:rect style:0];
+        CGRect rect = CGRectMake(10, 70, SCREEN_WIDTH - 20, SCREEN_HEIGHT - 90);
+        UIView *contentView = [[UIView alloc]initWithFrame:rect];
+        
+        //设置头部视图
+        self.myHeadView = [SFMyHeadView myHeadViewWithPerson:[SFApplication currentUser]];
+        [contentView addSubview:self.myHeadView];
+        
+        //设置在线列表
+        CGRect friendsRect = CGRectMake(10, self.myHeadView.frame.size.height + 10, SCREEN_WIDTH - 20, SCREEN_HEIGHT - 90 - self.myHeadView.frame.size.height - 20);
+        _friendsTableView = [[UITableView alloc]initWithFrame:friendsRect style:0];
         _friendsTableView.dataSource = self;
         _friendsTableView.delegate = self;
-//        _friendsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [contentView addSubview:_friendsTableView];
+        
         //好友单元格
         [_friendsTableView registerClass:[SFMapFriendTableViewCell class] forCellReuseIdentifier:CUSTOM_TABLE_CELL_STYLE_FRIEND];
         
-        _friendsTableView.separatorColor = [UIColor clearColor];
-        
-        self.myHeadView = [SFMyHeadView myHeadViewWithPerson:[SFApplication defoultSystemUser]];
-        
+        //设置头部视图编辑处理
         __block SFMapViewController *mapVC = self;
-        
         self.myHeadView.personEditBlock = ^(SFPersonEnity *person){
 
             SFMyDetailTableViewController *mydetailVC = [mapVC.storyboard instantiateViewControllerWithIdentifier:@"SFMyDetailTableViewController"];
@@ -1022,8 +1026,6 @@
             
             [mapVC.navigationController pushViewController:mydetailVC animated:YES];
         };
-        
-        _friendsTableView.tableHeaderView = self.myHeadView;
         
         _friendsTableView.backgroundColor = [UIColor clearColor];
         _friendsTableView.layer.cornerRadius = 5;
@@ -1037,8 +1039,6 @@
 - (SFPersonHeadView *)groupButton {
 	if(_groupButton == nil) {
         
-        
-        
         _groupButton = [[SFPersonHeadView alloc] initWithImage:@"parent_64px_1176109_easyicon.net" andWidth:BUTTON_WIDTH];
         
         _groupButton.frame = CGRectMake(10, 10, BUTTON_WIDTH, BUTTON_WIDTH);
@@ -1049,7 +1049,7 @@
             
             myVC.isGroupTalking = YES;
             
-            [myVC adjustViewWithPerson:[SFApplication defoultSystemUser] andMapView:myVC.mapView andLocationService:myVC.locService];
+            [myVC adjustViewWithPerson:[SFApplication currentUser] andMapView:myVC.mapView andLocationService:myVC.locService];
             
         };
 	}
@@ -1069,7 +1069,7 @@
             
             myVC.isGroupTalking = NO;
             
-            [myVC adjustViewWithPerson:[self currentFriend] andMapView:myVC.mapView andLocationService:myVC.locService];
+            [myVC adjustViewWithPerson:[myVC currentFriend] andMapView:myVC.mapView andLocationService:myVC.locService];
         };
             
 	}

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -11,11 +12,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rBACE1LP8UKwL0FcAAAeyQH9soc176_200x200_3" translatesAutoresizingMaskIntoConstraints="NO" id="HRn-4O-ClC">
                         <rect key="frame" x="118" y="16" width="68" height="68"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="68" id="0SK-D0-O61"/>
                             <constraint firstAttribute="height" constant="68" id="dPK-Da-cdx"/>
@@ -23,15 +25,17 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="隔壁老王" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9C-LL-zY5">
                         <rect key="frame" x="19" y="92" width="189" height="21"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="2X5-Ud-ZqG"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="东风吹，战鼓擂，我住隔壁我姓王 东风吹，战鼓擂，我住隔壁我姓王" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdW-l6-yy1">
                         <rect key="frame" x="38" y="112" width="234" height="23"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="23" id="3Bk-ZH-rEq"/>
                         </constraints>
@@ -41,6 +45,7 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kha-MN-X8V">
                         <rect key="frame" x="8" y="8" width="271" height="127"/>
+                        <animations/>
                         <state key="normal">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -49,6 +54,7 @@
                         </connections>
                     </button>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="k9C-LL-zY5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="1Vp-nq-rQO"/>
                     <constraint firstItem="kha-MN-X8V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5WZ-ue-0eR"/>
@@ -64,6 +70,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="kha-MN-X8V" secondAttribute="trailing" id="vyG-Hk-t0w"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <connections>
                 <outlet property="headImageView" destination="HRn-4O-ClC" id="y1u-VU-Vau"/>
                 <outlet property="nameLabel" destination="k9C-LL-zY5" id="kIA-jM-ffj"/>
